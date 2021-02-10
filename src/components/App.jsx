@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Input from "./Input";
 
 function App() {
   const [name, setName] = useState("");
@@ -17,14 +18,24 @@ function App() {
   return (
     <div className="container">
       <h1>Hello {headingText}</h1>
-      <form onSubmit={handleClick}>
+      <form>
         <input
           onChange={handleChange}
           type="text"
           placeholder="What's your name?"
           value={name}
         />
-        <button type="submit">Submit</button>
+
+        {/* <Input
+          onChange={handleChange}
+          type="text"
+          placeholder="What is your name?"
+          value={name}
+        /> */}
+
+        <button onClick={handleClick} type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );
