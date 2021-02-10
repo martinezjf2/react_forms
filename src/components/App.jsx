@@ -3,6 +3,8 @@ import React from "react";
 function App() {
   function handleChange(event) {
     console.log(event.target.value);
+    console.log(event.target.placeholder);
+    console.log(event.target.type);
   }
 
   return (
