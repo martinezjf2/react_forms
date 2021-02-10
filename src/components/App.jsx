@@ -9,7 +9,9 @@ function App() {
     setName(event.target.value);
   }
 
-  function handleClick() {}
+  function handleClick() {
+    setHeading(name);
+  }
 
   return (
     <div className="container">
