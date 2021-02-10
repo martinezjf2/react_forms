@@ -5,6 +5,7 @@ function App() {
 
   function handleChange(event) {
     console.log(event.target.value);
+    setName(event.target.value);
   }
 
   return (
